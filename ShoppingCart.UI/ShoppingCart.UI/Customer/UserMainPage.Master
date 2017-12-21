@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="UserMainPage.master.cs" Inherits="ShoppingCart.UI.Customer.UserMainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+      <link href="../Css/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <script src="../Css/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../Css/show_category.js" type="text/javascript"></script>
+    <link href="../Css/MyCss.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../Css/jquery.leanModal.min.js" type="text/javascript"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+
+      <div class="main_header">
+	<div class="content">
+       <div class="logo left"></div>
+      
+  
+
+  <div class="menubar right">
+        	
+         <div class=" left" id="img12">
+            <asp:Image ID="imgprofile" runat="server" CssClass="menuImg" />
+            <ul>
+           
+        <li><a href="UserProfile.aspx">PROFILE</a>
+        </li>
+        <li><a href="../Admin/Logout.aspx">LOGOUT</a>
+        </li>
+        </ul>
+        </div>
+       
+         
+     
+       
+            
+        <div class="clear"></div>
+        </div>
+       
+        <div class="menubar right">
+        	<table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td rowspan="2">
+    	<div class="ico">
+            <asp:ImageButton ID="ImageButton1" runat="server" 
+                PostBackUrl="~/Customer/CartView.aspx" 
+                ImageUrl="~/Images/SiteImg/cart123.png" /></div>
+    </td>
+    <td> 
+        <asp:Label ID="lblcart" runat="server" Text="" ></asp:Label></td>
+  </tr>
+
+</table>
+
+<table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+    	<div class="ico">
+            <asp:ImageButton ID="ImageButton2" runat="server" 
+                PostBackUrl="~/Customer/WishlistView.aspx" 
+                ImageUrl="~/Images/SiteImg/bag.png" />
+        
+    </td>
+    <td>
+        <asp:Label ID="lblwishlist" runat="server" Text=""></asp:Label></td>
+  </tr>
+  </table>
+
+      </div>
+        
+
+        
+        
+      <div class="clear"></div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="main_menubar" style="margin-left:0px;">
+	<div class="menu-content" >
+    	
+    	<div class="menu left">
+            <asp:Button ID="Button13" runat="server" Text="HOME"  
+                CssClass="menuButton left" PostBackUrl="~/Customer/UserHomePage.aspx"/>
+        </div>
+    	<div class="menu left"><asp:Button ID="Button14" runat="server" Text="CATEGORIES"  CssClass="menuButton left"/> &nbsp;<span class="arrow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        	<div class="category_container">
+            	
+                <asp:PlaceHolder ID="PlaceHolder2" runat="server"></asp:PlaceHolder>
+
+            </div>
+        </div>
+        <div class="menu left"><asp:Button ID="Button15" runat="server" Text="CART"  
+                CssClass="menuButton left" PostBackUrl="~/Customer/CartView.aspx"/></div>
+        <div class="menu left"><asp:Button ID="cmdBrand" runat="server" Text="BRANDS"  
+                CssClass="menuButton left" />&nbsp;<span class="arrow">&nbsp
+        	<div class="category_container">
+                <asp:PlaceHolder ID="PlaceHolder1" runat="server"></asp:PlaceHolder>
+            </div>
+        </div>
+        <div class="menu left"><asp:Button ID="Button17" runat="server" Text="PROFILE"  
+                CssClass="menuButton left" PostBackUrl="~/Customer/UserProfile.aspx"/></div>
+        <div class="menu left last"><asp:Button ID="Button18" runat="server" 
+                Text="PRODUCTS"  CssClass="menuButton left" 
+                PostBackUrl="~/Customer/ProductView.aspx"/></div>
+        <div class="menu left last"><asp:Button ID="Button1" runat="server" 
+                Text="WISHLIST"  CssClass="menuButton left" 
+                PostBackUrl="~/Customer/WishlistView.aspx"/></div>
+        <div class="menu left last"><asp:Button ID="Button2" runat="server" 
+                Text="FEEDBACK"  CssClass="menuButton left" 
+                PostBackUrl="~/Customer/Feedback.aspx"/></div>
+        <div class="menu left last"><asp:Button ID="Button3" runat="server" Text="LOGOUT"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/Logout.aspx"/></div>
+       
+          <div class="search left">
+            <asp:TextBox ID="txtSearchItem" runat="server" placeholder="Search Items " 
+                 AutoPostBack="True" ontextchanged="txtSearchItem_TextChanged"></asp:TextBox>
+            <%--<input type="text" placeholder="Search Items " />--%>
+        </div> 
+    </div>
+</div>
+    <div style="margin-left:100px;margin-top:50px;height:auto;">
+      
+&nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+
+
+      <div class="brand_container">
+	<div class="content">
+		<h3>OUR BRANDS</h3>
+        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+        <br/>
+        <asp:DataList ID="DataList1" runat="server" DataKeyField="BrandId" 
+            DataSourceID="SqlDataSource1" RepeatDirection="Horizontal">
+            <ItemTemplate>
+                <div class="brand left">
+                    <asp:Image ID="Image1" runat="server" CssClass="brand left" 
+                        ImageUrl='<%# Eval("BrandId", "~/Images/BrandLogos/{0}.jpg") %>' />
+                </div>
+                <br />
+            </ItemTemplate>
+        </asp:DataList>
+       	<asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ShoppingcartConnectionString %>" 
+            SelectCommand="SELECT * FROM [Brand]"></asp:SqlDataSource>
+       
+        
+    </div>    	
+</div>
+
+
+
+
+<div class="main_footer">
+	<div class="content">
+    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="300" align="left" valign="top">
+    	<br/><br/>
+    	<img src="img/logo-footer.png" />
+        <br/><br/>
+        <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae</p>
+        <br/>
+        <p>Cerat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </td>
+    <td width="200" align="left" valign="top">
+    	<br/><br/>
+        <ul>
+        	<li>MY ACCOUNT</li>
+        	<li>My orders</li>
+        	<li>My credit slips</li>
+        	<li>My addresses</li>
+        	<li>My personal info</li>
+        </ul>
+    </td>
+    <td width="200" align="left" valign="top">
+        <br/><br/>
+        <ul>
+        	<li>INFORMATION</li>
+        	<li>Specials</li>
+        	<li>New products</li>
+        	<li>Best sellers</li>
+        	<li>Manufactures</li>
+        </ul>
+    </td>
+    <td width="200" align="left" valign="top">
+    	       <br/><br/>
+        <ul>
+        	<li> EXTRAS</li>
+        	<li>Terms and conditions</li>
+        	<li>About us</li>
+        	<li>Secure payment</li>
+        	<li>Typo</li>
+        </ul></td>
+    <td width="200" align="left" valign="top">
+           <br/><br/>
+        <ul>
+        	<li>CUSTOMER SERVICE</li>
+        	<li>Our stores</li>
+        	<li>Contact us</li>
+        	<li>Site map</li>
+        </ul>
+        <table width="" border="0" cellspacing="5" cellpadding="0" class="connect">
+  <tr>
+    <td bgcolor="#A2A2A2"></td>
+    <td bgcolor="#929292"></td>
+    <td bgcolor="#737373"></td>
+    <td bgcolor="#515151"></td>
+  </tr>
+</table>
+
+
+    </td>
+  </tr>
+</table>
+
+    </div>
+</div>
+
+
+
+
+
+    </form>
+</body>
+</html>
+
+

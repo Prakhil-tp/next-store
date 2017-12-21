@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{93FECB9C-1F19-4606-BBD0-E87EDAD64E8F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ShoppingCart.UI</RootNamespace>
+    <AssemblyName>ShoppingCart.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AddBrand.aspx" />
+    <Content Include="Admin\AddDiscount.aspx" />
+    <Content Include="Admin\AddMoreColourToProducts.aspx" />
+    <Content Include="Admin\AddProduct.aspx" />
+    <Content Include="Admin\AdminHomePage.aspx" />
+    <Content Include="Admin\Category.aspx" />
+    <Content Include="Admin\Discount.aspx" />
+    <Content Include="Admin\EditBrand.aspx" />
+    <Content Include="Admin\EditProduct.aspx" />
+    <Content Include="Admin\EditsizeOfProduct.aspx" />
+    <Content Include="Admin\Logout.aspx" />
+    <Content Include="Admin\OrdersView.aspx" />
+    <Content Include="Admin\Productdetails.aspx" />
+    <Content Include="Admin\ProductView.aspx" />
+    <Content Include="Admin\UserView.aspx" />
+    <Content Include="Admin\ViewAllCartProduct.aspx" />
+    <Content Include="Admin\ViewAllWishlistProduct.aspx" />
+    <Content Include="Admin\ViewFeedback.aspx" />
+    <Content Include="Css\font-awesome.min.css" />
+    <Content Include="Css\image_show.js" />
+    <Content Include="Css\jcarousellite_1.0.1c4.js" />
+    <Content Include="Css\jquery-1.10.2.js" />
+    <Content Include="Css\jquery-1.8.2.min.js" />
+    <Content Include="Css\jquery.leanModal.min.js" />
+    <Content Include="Css\MyCss.css" />
+    <Content Include="Css\scroll_menu.js" />
+    <Content Include="Css\show_cart.js" />
+    <Content Include="Css\show_category.js" />
+    <Content Include="Css\sort.js" />
+    <Content Include="Css\style.css" />
+    <Content Include="Css\StyleSheet1.css" />
+    <Content Include="Customer\AddShipment.aspx" />
+    <Content Include="Customer\CartView.aspx" />
+    <Content Include="Customer\EditProfile.aspx" />
+    <Content Include="Customer\Feedback.aspx" />
+    <Content Include="Customer\NetBanking.aspx" />
+    <Content Include="Customer\ProductNameSearch.aspx" />
+    <Content Include="Customer\ProductQuickView.aspx" />
+    <Content Include="Customer\ProductView.aspx" />
+    <Content Include="Customer\UserHomePage.aspx" />
+    <Content Include="Customer\UserProfile.aspx" />
+    <Content Include="Customer\UserRegistration.aspx" />
+    <Content Include="Customer\UserSearchItem.aspx" />
+    <Content Include="Customer\ViewCheckOut.aspx" />
+    <Content Include="Customer\ViewProductBrand.aspx" />
+    <Content Include="Customer\ViewProductCategory.aspx" />
+    <Content Include="Customer\WishlistView.aspx" />
+    <Content Include="Customer\WishlistViewDesign.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Images\6.jpg" />
+    <Content Include="Images\ProfilePic\2.jpg" />
+    <Content Include="Images\ProfilePic\male.png" />
+    <Content Include="Images\SiteImg\Action-cancel.png" />
+    <Content Include="Images\SiteImg\arrow.jpg" />
+    <Content Include="Images\SiteImg\b1.jpg" />
+    <Content Include="Images\SiteImg\b2.jpg" />
+    <Content Include="Images\SiteImg\b3.jpg" />
+    <Content Include="Images\SiteImg\bag.png" />
+    <Content Include="Images\SiteImg\bg.png" />
+    <Content Include="Images\SiteImg\bookmark.png" />
+    <Content Include="Images\SiteImg\cart.png" />
+    <Content Include="Images\SiteImg\cart123.png" />
+    <Content Include="Images\SiteImg\edit.png" />
+    <Content Include="Images\SiteImg\login.png" />
+    <Content Include="Images\SiteImg\logo-footer.png" />
+    <Content Include="Images\SiteImg\logo.png" />
+    <Content Include="Images\SiteImg\logo_blue.png" />
+    <Content Include="Images\SiteImg\logo_green.png" />
+    <Content Include="Images\SiteImg\man2.png" />
+    <Content Include="Images\SiteImg\member.png" />
+    <Content Include="Images\SiteImg\offer.png" />
+    <Content Include="Images\SiteImg\place.png" />
+    <Content Include="Images\SiteImg\return.png" />
+    <Content Include="Images\SiteImg\search.png" />
+    <Content Include="Images\SiteImg\set-flat-design-concepts-email-web-banners-printed-materials-38342936.jpg" />
+    <Content Include="Images\SiteImg\shipping.png" />
+    <Content Include="Images\SiteImg\span_arrow.png" />
+    <Content Include="Images\SiteImg\star.png" />
+    <Content Include="Images\SliderImg\1.png" />
+    <Content Include="Images\SliderImg\12.png" />
+    <Content Include="Images\SliderImg\7.png" />
+    <Content Include="Images\SliderImg\8.png" />
+    <Content Include="Images\SliderImg\9.png" />
+    <Content Include="PublicUser\ContactsView.aspx" />
+    <Content Include="PublicUser\DISCOUNT.aspx" />
+    <Content Include="PublicUser\Homepage.aspx" />
+    <Content Include="PublicUser\ProductQuickSearch.aspx" />
+    <Content Include="PublicUser\ProductSearch.aspx" />
+    <Content Include="PublicUser\ProductSearchItem.aspx" />
+    <Content Include="PublicUser\ViewAllProduct.aspx" />
+    <Content Include="PublicUser\ViewProductBrand.aspx" />
+    <Content Include="PublicUser\ViewProductCategory.aspx" />
+    <Content Include="sliderengine\amazingslider.js" />
+    <Content Include="sliderengine\carouselarrows-32-32-0.png" />
+    <Content Include="sliderengine\initslider-1.js" />
+    <Content Include="sliderengine\jquery.js" />
+    <Content Include="sliderengine\navarrows-28-28-0.png" />
+    <Content Include="sliderengine\navbuttonbgimage-28-28-0.png" />
+    <Content Include="sliderengine\navplaypause-28-28-0.png" />
+    <Content Include="sliderengine\playvideo-64-64-0.png" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AddBrand.aspx.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddBrand.aspx.designer.cs">
+      <DependentUpon>AddBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddDiscount.aspx.cs">
+      <DependentUpon>AddDiscount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddDiscount.aspx.designer.cs">
+      <DependentUpon>AddDiscount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddMoreColourToProducts.aspx.cs">
+      <DependentUpon>AddMoreColourToProducts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddMoreColourToProducts.aspx.designer.cs">
+      <DependentUpon>AddMoreColourToProducts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AddProduct.aspx.designer.cs">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminHomePage.aspx.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminHomePage.aspx.designer.cs">
+      <DependentUpon>AdminHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminMainPage.Master.cs">
+      <DependentUpon>AdminMainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminMainPage.Master.designer.cs">
+      <DependentUpon>AdminMainPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Category.aspx.designer.cs">
+      <DependentUpon>Category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Discount.aspx.cs">
+      <DependentUpon>Discount.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Discount.aspx.designer.cs">
+      <DependentUpon>Discount.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditBrand.aspx.cs">
+      <DependentUpon>EditBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditBrand.aspx.designer.cs">
+      <DependentUpon>EditBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditProduct.aspx.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditProduct.aspx.designer.cs">
+      <DependentUpon>EditProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditsizeOfProduct.aspx.cs">
+      <DependentUpon>EditsizeOfProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\EditsizeOfProduct.aspx.designer.cs">
+      <DependentUpon>EditsizeOfProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Logout.aspx.designer.cs">
+      <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\OrdersView.aspx.cs">
+      <DependentUpon>OrdersView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\OrdersView.aspx.designer.cs">
+      <DependentUpon>OrdersView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Productdetails.aspx.cs">
+      <DependentUpon>Productdetails.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Productdetails.aspx.designer.cs">
+      <DependentUpon>Productdetails.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\UserView.aspx.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\UserView.aspx.designer.cs">
+      <DependentUpon>UserView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewAllCartProduct.aspx.cs">
+      <DependentUpon>ViewAllCartProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewAllCartProduct.aspx.designer.cs">
+      <DependentUpon>ViewAllCartProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewAllWishlistProduct.aspx.cs">
+      <DependentUpon>ViewAllWishlistProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewAllWishlistProduct.aspx.designer.cs">
+      <DependentUpon>ViewAllWishlistProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ViewFeedback.aspx.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\ViewFeedback.aspx.designer.cs">
+      <DependentUpon>ViewFeedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\AddShipment.aspx.cs">
+      <DependentUpon>AddShipment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\AddShipment.aspx.designer.cs">
+      <DependentUpon>AddShipment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\CartView.aspx.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\CartView.aspx.designer.cs">
+      <DependentUpon>CartView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\EditProfile.aspx.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\EditProfile.aspx.designer.cs">
+      <DependentUpon>EditProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\NetBanking.aspx.cs">
+      <DependentUpon>NetBanking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\NetBanking.aspx.designer.cs">
+      <DependentUpon>NetBanking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ProductNameSearch.aspx.cs">
+      <DependentUpon>ProductNameSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ProductNameSearch.aspx.designer.cs">
+      <DependentUpon>ProductNameSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ProductQuickView.aspx.cs">
+      <DependentUpon>ProductQuickView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ProductQuickView.aspx.designer.cs">
+      <DependentUpon>ProductQuickView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ProductView.aspx.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ProductView.aspx.designer.cs">
+      <DependentUpon>ProductView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserHomePage.aspx.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserHomePage.aspx.designer.cs">
+      <DependentUpon>UserHomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserMainPage.Master.cs">
+      <DependentUpon>UserMainPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserMainPage.Master.designer.cs">
+      <DependentUpon>UserMainPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserProfile.aspx.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserProfile.aspx.designer.cs">
+      <DependentUpon>UserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserRegistration.aspx.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserRegistration.aspx.designer.cs">
+      <DependentUpon>UserRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\UserSearchItem.aspx.cs">
+      <DependentUpon>UserSearchItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\UserSearchItem.aspx.designer.cs">
+      <DependentUpon>UserSearchItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewCheckOut.aspx.cs">
+      <DependentUpon>ViewCheckOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewCheckOut.aspx.designer.cs">
+      <DependentUpon>ViewCheckOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewProductBrand.aspx.cs">
+      <DependentUpon>ViewProductBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewProductBrand.aspx.designer.cs">
+      <DependentUpon>ViewProductBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\ViewProductCategory.aspx.cs">
+      <DependentUpon>ViewProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\ViewProductCategory.aspx.designer.cs">
+      <DependentUpon>ViewProductCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\WishlistView.aspx.cs">
+      <DependentUpon>WishlistView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\WishlistView.aspx.designer.cs">
+      <DependentUpon>WishlistView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customer\WishlistViewDesign.aspx.cs">
+      <DependentUpon>WishlistViewDesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customer\WishlistViewDesign.aspx.designer.cs">
+      <DependentUpon>WishlistViewDesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PublicUser\ContactsView.aspx.cs">
+      <DependentUpon>ContactsView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ContactsView.aspx.designer.cs">
+      <DependentUpon>ContactsView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\DISCOUNT.aspx.cs">
+      <DependentUpon>DISCOUNT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\DISCOUNT.aspx.designer.cs">
+      <DependentUpon>DISCOUNT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\Homepage.aspx.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\Homepage.aspx.designer.cs">
+      <DependentUpon>Homepage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ProductQuickSearch.aspx.cs">
+      <DependentUpon>ProductQuickSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ProductQuickSearch.aspx.designer.cs">
+      <DependentUpon>ProductQuickSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ProductSearch.aspx.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ProductSearch.aspx.designer.cs">
+      <DependentUpon>ProductSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ProductSearchItem.aspx.cs">
+      <DependentUpon>ProductSearchItem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ProductSearchItem.aspx.designer.cs">
+      <DependentUpon>ProductSearchItem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\PublicMaster.Master.cs">
+      <DependentUpon>PublicMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\PublicMaster.Master.designer.cs">
+      <DependentUpon>PublicMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ViewAllProduct.aspx.cs">
+      <DependentUpon>ViewAllProduct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ViewAllProduct.aspx.designer.cs">
+      <DependentUpon>ViewAllProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ViewProductBrand.aspx.cs">
+      <DependentUpon>ViewProductBrand.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ViewProductBrand.aspx.designer.cs">
+      <DependentUpon>ViewProductBrand.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PublicUser\ViewProductCategory.aspx.cs">
+      <DependentUpon>ViewProductCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PublicUser\ViewProductCategory.aspx.designer.cs">
+      <DependentUpon>ViewProductCategory.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admin\AdminMainPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShoppingCart.Controller\ShoppingCart.Controller.csproj">
+      <Project>{F5C5726D-39E1-422D-A48E-3E216B5B4000}</Project>
+      <Name>ShoppingCart.Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ShoppingCart.Model\ShoppingCart.Model.csproj">
+      <Project>{24BAA380-463A-430E-813A-206FAE36078D}</Project>
+      <Name>ShoppingCart.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Customer\UserMainPage.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\BrandLogos\" />
+    <Folder Include="Images\ColorImage\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\SiteImg\bookmark.psd" />
+    <None Include="Images\SiteImg\cart.psd" />
+    <None Include="Images\SiteImg\ico.psd" />
+    <None Include="Images\SiteImg\logo_blue.psd" />
+    <None Include="Images\SiteImg\star.psd" />
+    <Content Include="PublicUser\PublicMaster.Master" />
+    <None Include="sliderengine\Thumbs.db" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1369</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

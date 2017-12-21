@@ -1,0 +1,441 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	font-family:"Segoe UI";
+	padding:0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    color: #000000;
+
+}
+.fixed{
+	position:fixed;
+	background-color:#FFF;
+	z-index:100;
+	display:none;
+}
+.main_header{
+	width:100%;
+	height:100px;
+	border-bottom:1px solid #E7E7E7;
+
+}
+.logo
+{
+    width: 200px;
+    height: 100px;
+    background-image: url('../Images/SiteImg/logo_blue.png');
+}
+.menubar{
+	width:auto;
+	height:50px;
+	padding:25px 0px;
+
+}
+.menubar table{
+	float:left;
+	margin-right:10px;
+	font-size:11px;
+	font-weight:bold;
+	color:#3A3A3A;
+
+}
+.menubar table tr td .ico{
+	width:30px; 
+	height:30px;
+	background-color:#F5F5F5;
+	margin-right:10px;
+}
+.menubar table tr td span{
+	font-weight:normal;
+	color:#777;
+}
+.header_menu{
+	font-size:13px;
+	color:#808080;
+	padding:0px 20px;
+}
+.cart{
+	width:98px;
+	height:38px;
+	background-image:url('img/cart.png');
+	background-repeat:no-repeat;
+	padding-left:50px;
+	padding-top:2px;
+	padding-right:10px;
+	position:relative;
+}
+.cart_container{
+	width:250px;
+	height:300px;
+	background-color:#FFF;
+	position:absolute;
+	left:0px;
+	top:40px;
+
+	display:none;
+	border:1px solid #D4D4D4;
+	border-top:none;
+}
+.cart span{
+	font-size:13px;
+	
+}
+.cart h4{
+
+	font-size:12px;
+    width: 97px;
+}
+.content{
+	width:1100px;
+	height:auto;
+	margin:auto;
+	padding:0px 10px;
+
+}
+.menu-content{
+	
+	height:auto;
+	margin:auto;
+	padding:0px 10px;
+
+}
+.main_menubar{
+	width:100%;
+	height:50px;
+	border-bottom:1px solid #E7E7E7;
+}
+.clear{
+	clear:both;
+}
+.thin{
+	font-weight:normal;
+}
+.menu{
+	height:20px;
+	padding:15px 24px;
+	color:#808080;
+	font-size:13px;
+	border-left:1px solid #E7E7E7;
+	position:relative;
+}
+.last{
+		border-right:1px solid #E7E7E7;
+}
+.menu:hover{
+	color:#31a8d2;
+	cursor:pointer;
+}
+.arrow
+{
+    width: 20px;
+    height: 20px;
+    background-image: url('../Images/SiteImg/span_arrow.png');
+}
+.left{
+	float:left;
+    
+}
+.right{
+	float:right;
+}
+.category_container{
+	width:500px;
+	height:auto;
+	border:1px solid #D4D4D4;
+	
+	position:absolute;
+	top:50px;
+	left:-1px;
+	background-color:#FFF;
+	display:none;
+	
+
+}
+.menu:hover .category_container{
+	color:#808080;
+}
+.menu:hover .category_container a:hover
+{
+    color: #31a8d2;
+ 
+}
+.load_more{
+	
+}
+.search{
+	padding:8px;
+	padding-right:0px;
+	
+}
+.search input[type=text]
+{
+    border: 1px solid #E7E7E7;
+    background-color: #FBFBFB;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 13px;
+    background-image: url('../Images/SiteImg/search.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.banner{
+	width:100%;
+	height:400px;
+	background-color:#7C7C7C;
+	/*background-image:url(img/b3.jpg);*/
+	background-position:center;
+	background-color:#2d5972;
+	background-repeat:no-repeat;
+}
+
+p{
+	font-size:13px;
+	
+}
+
+.banner h1{
+	color:#FFF;
+	font-family:"Segoe UI Light";
+	font-weight:normal;
+}
+.banner h3{
+	color:#E9E9E9;
+	font-weight:normal;
+}
+.banner p{
+	color:#FFF;
+}
+.banner button{
+	padding:10px 20px;
+	background:transparent;
+	border:1px solid #FFF;
+	color:#FFF;
+	border-radius:5px;
+}
+
+.sort_prize_table tr td{
+	padding:5px 0px;
+	color:#555;
+}
+.sort_prize_table table tr td{
+	font-size:13px;
+	color:#808080;
+	border-bottom:1px solid #F5F5F5;
+}
+.prize_ico{
+	width:15px;
+	height:15px;
+	background-color:#AAA;
+	border-radius:50%;
+
+}
+.ad{
+	width:250px;
+	height:auto;
+
+}
+.ad img{
+	width:250px;
+}
+.prize_tr:hover{
+	background-color:#E9E9E9;
+}
+.active_prize
+{
+	background-color:#3F3F3F;
+}
+
+
+
+
+.product_container{
+	width:173px;
+	padding:10px;
+	height:250px;
+	border:1px solid #E9E9E9;
+	float:left;
+	margin-left:5px;
+	margin-top:5px;
+	
+	line-height:1.8;
+	position:relative;
+	font-size:13px;
+}
+.prod
+.product_container img{
+}
+an{
+	text-decoration:line-through; 
+	color:#959595
+}
+.new_span{
+	color:#d52828;
+}
+.add_cart{
+	width:173px;	
+	height:20px;
+	line-height:1.5;
+	background-color:#d94a39;
+	text-align:center;
+	padding:5px 0px;
+	color:#FFF;
+	border-radius:2px;
+
+}
+.add_cart:hover{
+	background-color:#c3493a;
+	cursor:pointer;
+}
+.new{
+	width:30px;
+	height:30px;
+	background-color:#d52828;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+
+
+
+
+.half{
+	width:500px;
+	height:auto;
+	float:left;
+	padding-top:50px;
+	padding-right:50px;
+	
+}
+.half h4, .half p{
+	color:#7C7C7C;
+}
+.half p{
+	text-align:justify;
+}
+.product_view_table{
+	height:400px;
+}
+.side_img{
+	border-bottom:1px solid #E9E9E9;
+	width:100px;
+	height:100px;
+}
+.side_img img{
+	margin:5px;
+	width:90px;
+	height:90px;
+}
+.side_img img:hover{
+	cursor:pointer;
+}
+.main_img{
+	width:400px;
+	height:400px;
+}
+.main_img img{
+	margin:5px;
+	width:390px;
+	height:390px;
+}
+.product_prize{
+	color:#d94a39;
+	font-weight:bold;
+	color:#31a8d2;
+	font-size:20px;
+}
+.add_table{
+	padding:10px 0px;
+}
+.add_table tr td{
+	padding-right:10px;
+}
+.related_table{
+	height:120px;
+}
+.star{
+	width:100px;
+	height:20px;
+	margin:10px 0px;
+	background-image:url(img/star.png);
+}
+
+
+
+.brand_container{
+	background-color:#FBFBFB;
+	padding:20px 0px;
+}
+.brand_container .content{
+	overflow:hidden;
+}
+.newsticker-jcarousellite ul li{
+	width:25%;
+	height:100px;
+	float:left;
+}
+.brand{
+	width:100px;
+	height:100px;
+	background:#959595;
+	margin-right:9px;
+	border-radius:5px;
+	border-bottom:3px solid #6B6B6B;
+}
+
+
+
+
+.main_footer{
+	background-color:#444444;
+	padding-bottom:50px;
+}
+.main_footer p{
+	font-size:13px;
+	color:#c7c7c7;
+	padding-right:10px;
+}
+.main_footer ul{
+	list-style:none;
+	color:#c7c7c7;
+	font-size:13px; 
+}
+.main_footer ul li{
+	padding-bottom:15px;
+}
+.main_footer ul li:first-child{
+	font-weight:14px;
+	color:#FEFEFE;
+}
+
+.connect tr td{
+	width:35px;
+	height:35px;
+	border-bottom:5px solid #2C2C2C;
+}
+a{
+	color:inherit;
+	text-decoration:none;
+}
+#loginIcon
+{
+    background-image: url('../Images/SiteImg/login.png');
+    top: 0px;
+    left: 4px;
+}
+
+
+#j_log
+{
+   cursor:pointer;
+}
+#modal_trigger
+{
+    font-size:12px;
+    font-weight:normal;
+}

@@ -1,0 +1,246 @@
+﻿.priceButton
+{
+    background-color: White;
+    border: none;
+    color: #808080;
+    left: auto;
+    right: auto;
+  
+}
+.menuButton{
+	border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    color:#808080;
+	font-size:13px;
+	position:relative;
+	background-color:White;
+	text-align:center;
+	margin-top:0px;
+    top: 0px;
+    left: -4px;
+}
+.last{
+		border-right:1px solid #E7E7E7;
+    top: 0px;
+    left: 0px;
+}
+.menuButton:hover{
+	color:#31a8d2;
+	cursor:pointer;
+}
+.submenuButton
+{
+    	background-color:White;
+    	padding:5px;
+    	border:none;
+    	color:#808080;
+    	padding-left:auto;
+    	padding-right:auto;
+}
+.submenuButton:hover
+{
+     color: #31a8d2;
+     cursor:pointer;
+}
+.searchItems
+{
+    border: 1px solid #E7E7E7;
+    background-color: #FBFBFB;
+    height: 30px;
+    width: 200px;
+    padding-left: 10px;
+    padding-right: 40px;
+    font-size: 13px;
+    background-image: url('../Images/search.png');
+    background-position: right;
+    background-repeat: no-repeat;
+}
+.ourProducts
+{
+    height:730px;width:900px;margin-left:250px;
+     overflow-y:scroll;
+}
+.ourProducts::-webkit-scrollbar
+{
+    width:5px;   
+    background-color:White;
+}
+.ourProducts::-webkit-scrollbar-thumb
+{
+    background-color:#666;
+    border-radius:10px;
+}
+.lbl
+{
+    text-align:center;
+    margin-left:10px;
+}
+.lblprice
+{
+    text-align: center;
+    margin-left:10px;
+    color: #800000;
+}
+.placeAddress
+{
+    margin-top: 5%;
+    width: 230px;
+    height: 180px;
+    background-color: #999999;
+    float: right;
+    color: #FFF;
+    margin-right: 22%;
+    opacity: 0.8;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+  .contactPlace
+{
+    width: 100%;
+    height: 300px;
+ 
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url('../Images/SiteImg/place.png');
+}
+.whats{
+	width:98%;
+	padding:1%;
+	height:auto;
+	background-color:#FFF;
+	text-align:center;
+	font-size:50px;
+	color:#333;
+}
+.whats font{
+	font-size:18px;
+}
+.cmdbutton
+{
+    padding-left: 10px;
+   padding-right: 10px;
+    color: #FFF;
+    background-color: #FF5050;
+    width:80px;
+    }
+.menuImg
+{
+    height:50px;
+   border-left:1px solid #E7E7E7;
+	position:relative;
+	width:50px;
+	margin-top:2px;
+	margin-right:10px;
+	border-radius:50%;
+}
+.txt
+{
+    border: 1px solid #999999;
+    margin-left:4px;
+    border-radius:3px;
+    }
+.dll
+{
+    border: 1px solid #999999;
+    margin-left: 0px;
+     width:250px;
+     height:30px;
+    }
+.wishlistview
+{
+    height:229px;
+    width:204px;
+    float:left;
+    margin-left:6px;
+}
+
+.wishlistviewContent
+{
+    background-color:Gray;
+     height:215px;
+    width:209px;
+    margin-left:6px;
+    display:none;
+}
+#img12
+{
+    position:fixed;
+}
+ul
+{
+ margin:0px;
+padding:0px;
+list-style:none;
+position:absolute;
+top:50px;
+z-index:20;
+border:1px solid #E7E7E7;
+border-top:none;
+display:none;
+right:0px;
+
+}
+ ul li{
+background-color:#FFF;
+float:none;	
+color:#808080;
+padding:10px 30px 9px 30px; 
+border-top:1px solid #E7E7E7;
+}
+ul li:first-child
+{
+    border-top:none;
+}
+#img12:hover ul {
+display:block;	
+}
+.reviw
+{
+    border: 1px solid #999999;
+    width: 700px;
+    height: auto;
+}
+.datalist
+{
+     border: 1px solid #999999;
+}
+.datalistSub
+{
+    margin-left:10px;
+   
+}
+ul li:hover
+{
+    color:#31a8d2;
+	cursor:pointer;
+}
+.mainBodyCenter
+{
+    width:800px;
+    height:500px;
+    float:left;
+    overflow-y:scroll;
+}
+.mainBodyCenter::-webkit-scrollbar
+{
+    width:5px;   
+    background-color:White;
+}
+.mainBodyCenter::-webkit-scrollbar-thumb
+{
+    background-color:#666;
+    border-radius:10px;
+}
+.offer
+{
+    background-image: url('../Images/SiteImg/offer.png');
+    background-repeat: no-repeat;
+    width:400px;
+    height:200px;
+    padding-left:65px;
+    padding-top:15px;
+}

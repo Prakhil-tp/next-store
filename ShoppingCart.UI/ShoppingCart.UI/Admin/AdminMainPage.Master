@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMainPage.master.cs" Inherits="ShoppingCart.UI.Admin.AdminMainPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+         <link href="../Css/StyleSheet1.css" rel="stylesheet" type="text/css" />
+    <script src="../Css/jquery-1.10.2.js" type="text/javascript"></script>
+    <script src="../Css/show_category.js" type="text/javascript"></script>
+    <link href="../Css/MyCss.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Css/style.css" rel="stylesheet" type="text/css" />
+    <script src="../Css/jquery.leanModal.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+
+    <div class="main_header">
+	<div class="content">
+       <div class="logo left"></div>
+      
+  
+       
+        <div class="menubar right">
+        	<table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td rowspan="2">
+    	<div class="ico"><img src="../Images/SiteImg/shipping.png" /></div>
+    </td>
+    <td>FREE SHIPPING</td>
+  </tr>
+  <tr>
+    <td><span>On order, save $100.00</span></td>
+  </tr>
+</table>
+<table width="" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td rowspan="2">
+    	<div class="ico"><img src="../Images/SiteImg/return.png" /></div>
+    </td>
+    <td>FREE RETURN</td>
+  </tr>
+  <tr>
+    <td><span>Free 90 days return policy</span></td>
+  </tr>
+</table>
+
+      </div>
+        
+        
+      <div class="clear"></div>
+    </div>
+
+</div>
+
+
+
+
+
+<div class="main_menubar">
+	<div class="menu-content">
+    	<div class="menu left">
+            <asp:Button ID="Button13" runat="server" Text="HOME"  
+                CssClass="menuButton left"/>
+        </div>
+    	<div class="menu left">
+        <asp:Button ID="Button14" runat="server" Text="CATEGORIES"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/Category.aspx"/> 
+   
+        	
+        </div>
+        <div class="menu left">
+            <asp:Button ID="Button15" runat="server" Text="CART"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/ViewAllCartProduct.aspx"/></div>
+        <div class="menu left">
+            <asp:Button ID="cmdBrand" runat="server" Text="BRANDS"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/AddBrand.aspx" />
+        
+        </div>
+        <div class="menu left">
+            <asp:Button ID="Button17" runat="server" Text="USER"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/UserView.aspx"/></div>
+        <div class="menu left last">
+            <asp:Button ID="Button18" runat="server" 
+                Text="PRODUCTS"  CssClass="menuButton left" 
+                PostBackUrl="~/Admin/ProductView.aspx"/></div>
+        <div class="menu left last">
+            <asp:Button ID="Button1" runat="server" 
+                Text="WISHLIST"  CssClass="menuButton left" 
+                PostBackUrl="~/Admin/ViewAllWishlistProduct.aspx"/></div>
+        <div class="menu left last">
+            <asp:Button ID="Button2" runat="server" 
+                Text="FEEDBACK"  CssClass="menuButton left" 
+                PostBackUrl="~/Admin/ViewFeedback.aspx"/></div>
+                 <div class="menu left last">
+            <asp:Button ID="Button4" runat="server" 
+                Text="ORDER"  CssClass="menuButton left" 
+                PostBackUrl="~/Admin/OrdersView.aspx"/></div>
+                   <div class="menu left last">
+            <asp:Button ID="Button5" runat="server" 
+                Text="DISCOUNT"  CssClass="menuButton left" 
+                PostBackUrl="~/Admin/AddDiscount.aspx"/></div>
+        <div class="menu left last"><asp:Button ID="Button3" runat="server" Text="LOGOUT"  
+                CssClass="menuButton left" PostBackUrl="~/Admin/Logout.aspx"/></div>
+        
+    </div>
+</div>
+
+    <div style="margin-left:100px;margin-top:100px;">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
+
+
+
+
+   <%-- &nbsp;<asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" 
+            StaticSubMenuIndent="16px">
+            <Items>
+                <asp:MenuItem Text="Home" Value="Home"></asp:MenuItem>
+                <asp:MenuItem Text="Brand" Value="Brand" NavigateUrl="~/Admin/AddBrand.aspx">
+                    <asp:MenuItem Text="Add Brand" Value="Add Brand" 
+                        NavigateUrl="~/Admin/AddBrand.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text=" View Brand" Value=" View Brand"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Discount" Value="Discount" 
+                    NavigateUrl="~/Admin/Discount.aspx"></asp:MenuItem>
+                <asp:MenuItem Text="Feedback" Value="Feedback"></asp:MenuItem>
+                <asp:MenuItem Text="Products" Value="Products">
+                    <asp:MenuItem Text="Add Product" Value="Add Product" 
+                        NavigateUrl="~/Admin/AddProduct.aspx"></asp:MenuItem>
+                    <asp:MenuItem Text="ViewProduct" Value="ViewProduct" 
+                        NavigateUrl="~/Admin/ProductView.aspx"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Settings" Value="Settings">
+                    <asp:MenuItem Text="Edit" Value="Edit"></asp:MenuItem>
+                    <asp:MenuItem Text="Log Out" Value="Log Out"></asp:MenuItem>
+                </asp:MenuItem>
+                <asp:MenuItem Text="Review" Value="Review"></asp:MenuItem>
+                <asp:MenuItem Text="Order" Value="Order"></asp:MenuItem>
+                <asp:MenuItem Text="Category" Value="Category" 
+                    NavigateUrl="~/Admin/Category.aspx"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Admin/UserView.aspx" Text="User" Value="Customer">
+                </asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        <br />
+        <br />
+        <br />--%>
